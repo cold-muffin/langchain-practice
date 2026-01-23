@@ -16,6 +16,7 @@ llm = ChatOpenAI(
   base_url="https://openrouter.ai/api/v1",
   temperature=0
 )
+# `llm.invoke()` -> `AIMessage(content: str)`
 # llm.invoke("Say hi I invoked this request using LangChain.").pretty_print()
 
 # You can also invoke models using ChatPromptTemplates

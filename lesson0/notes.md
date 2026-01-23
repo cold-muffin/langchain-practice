@@ -20,6 +20,19 @@ Simple agent pipeline:
 ### `BaseChatModel`
 The model to invoke or pass into the `create_agent` method.
 
+#### Attributes
+##### `temperature`
+Controls the randomness of the model. Higher = more creative, lower = more deterministic.
+
+##### `max_tokens`
+Controls the size of the output from the model.
+
+##### `timeout`
+Max amount of time before cancelling a request to a model.
+
+##### `max_retries`
+Max amount of times to retry a request if a request fails.
+
 #### Methods
 ##### `invoke(LanguageModelInput)`
 Invokes an LLM.
